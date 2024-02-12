@@ -1,0 +1,5 @@
+astor==0.8.1
+tensorflow==2.7.0
+pandas==1.3.3
+transformers==4.12.3
+termcolor==1.1.0
