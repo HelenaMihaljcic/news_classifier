@@ -1,6 +1,5 @@
 import tensorflow as tf
 from tensorflow import keras
-# pylint: disable=no-name-in-module, import-error
 import pandas as pd
 from transformers import DistilBertTokenizer
 from transformers import TFDistilBertForSequenceClassification
@@ -18,7 +17,7 @@ df_metadata = pd.read_json('News_Category_Dataset_v3.json', lines=True)
 df = df_metadata.sample(n=100000, random_state=0)
 df_out_of_sample = df_metadata[~df_metadata.isin(df)].dropna()
 
-# Kreiranje rečnika za mapiranje kategorija na brojeve
+# Kreiranje rječnika za mapiranje kategorija na brojeve
 label_dict = {}
 index = 0
 for l in df.category.unique():
@@ -27,7 +26,7 @@ for l in df.category.unique():
 
 def make_prediction(input_text):
     """
-    Funkcija za pravljenje predikcije kategorije na osnovu unetog teksta.
+    Funkcija za pravljenje predikcije kategorije na osnovu unijetog teksta.
 
     :param input_text: Tekst za koji se vrši predikcija.
     :return: Predikcija kategorije.
