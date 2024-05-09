@@ -8,7 +8,7 @@ Ovaj program omogućuje kategorizaciju teksta koristeći prethodno trenirani mod
 2. Instalirajte potrebne biblioteke naredbom: `pip install -r requirements.txt`.
 3. Preuzmite prethodno trenirani model i tokenizer. Očekuje se da su model i tokenizer dostupni u direktoriju "model".
 4. Preuzmite podatke za treniranje i testiranje modela. Očekuje se da je datoteka s podacima nazvana "News_Category_Dataset_v3.json" i da je dostupna u istom direktoriju kao i kod.
-5. Pokrenite program naredbom: `python test.py`.
+5. Pokrenite program naredbom: `python main.py`.
 
 ## Korištenje
 
@@ -18,7 +18,9 @@ Ovaj program omogućuje kategorizaciju teksta koristeći prethodno trenirani mod
 
 ## Struktura Koda
 
-- `test.py`: Glavni programski kod koji sadrži funkcije za kategorizaciju teksta i grafičko korisničko sučelje pomoću biblioteke Tkinter.
+- `main.py`: Sadrži kod za pokretanje kategorizacije
+- `logic.py` :  Sadrži funkcije za kategorizaciju teksta
+- `app.py` : Sadrži grafičko korisničko sučelje kreirano pomoću biblioteke Tkinter
 - `requirements.txt`: Datoteka sa spiskom svih potrebnih biblioteka i njihovih verzija za ovaj projekat.
 - `model/`: Direktorij koji sadrži prethodno trenirani model i tokenizer.
 
