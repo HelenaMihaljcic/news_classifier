@@ -83,7 +83,7 @@ def validate_text(input_text):
 
 def make_prediction(input_text):
     """
-    Funkcija za pravljenje predikcije kategorije na osnovu unetog teksta.
+    Funkcija za pravljenje predikcije kategorije na osnovu unesenog teksta.
 
     Args:
         input_text (str): Tekst za koji se vrši predikcija.
