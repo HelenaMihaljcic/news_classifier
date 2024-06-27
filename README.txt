@@ -2,6 +2,8 @@
 
 Ovaj program omogućuje kategorizaciju teksta koristeći prethodno trenirani model za klasifikaciju sekvenci. U ovom slučaju, koristi se DistilBERT model za klasifikaciju novinskih članaka po kategorijama.
 
+
+
 ## Instalacija i Pokretanje
 
 1. Preporučuje se korištenje virtualnog okruženja kako bi se izolirale potrebne biblioteke za ovaj projekat. 
@@ -23,6 +25,9 @@ Ovaj program omogućuje kategorizaciju teksta koristeći prethodno trenirani mod
 - `app.py` : Sadrži grafičko korisničko sučelje kreirano pomoću biblioteke Tkinter
 - `requirements.txt`: Datoteka sa spiskom svih potrebnih biblioteka i njihovih verzija za ovaj projekat.
 - `model/`: Direktorij koji sadrži prethodno trenirani model i tokenizer.
+
+## Ograničenja
+ - Model prepoznaje samo riječi na engleskom jeziku. Unesena srpska imena, prezimena, i druge riječi na srpskom jeziku neće biti prepoznate.
 
 ## Napomene
 
